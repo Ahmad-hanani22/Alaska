@@ -1,0 +1,143 @@
+.custom-input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.custom-input-group i {
+  margin-right: 0.5rem;
+  color: #495057;
+}
+
+.custom-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+/* تعديل زر المسح */
+.clear-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0; /* تقليل الحشو */
+  border-radius: 0.25rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #6c757d;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem; /* تقليل المسافة من اليمين */
+  transform: translateY(-50%);
+}
+
+.clear-btn:hover {
+  color: #343a40;
+}
+
+/* بقية الستايلات (بدون تغيير) */
+.filter-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تخصيص قسم "Where & When" */
+.where-when-section {
+  background-color: #003399; /* لون رمادي أفتح */
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.filter-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #003399; /* تغيير اللون إلى الأسود */
+  font-weight: bold;
+}
+.where-when-section h4 {
+  color: #ffffff;
+}
+.filter-input {
+  margin-bottom: 15px;
+}
+
+.filter-input .form-label {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.clear-filter-button {
+  border: 1px solid #ffffff;
+  color: #003399;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.clear-filter-button:hover {
+  background-color: #003399;
+  color: #ffffff;
+}
+
+.selected-filters {
+  margin-top: 25px; /* هذا الهامش موجود بالفعل */
+}
+.clear-filter {
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.clear-filter:hover {
+  text-decoration: underline;
+}
+
+.form-check {
+  margin-bottom: 8px;
+}
+
+.form-check-input {
+  margin-right: 0.5rem;
+}
+.form-check-label i.fa-star {
+  color: #ffa500; /* لون برتقالي */
+}
+.form-check-label {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.d-flex.align-items-center {
+  margin-bottom: 15px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+.btn-success {
+  background-color: #003399;
+  border-color: #003399;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* إضافة انتقال لـ transform */
+}
+
+.btn-success:hover {
+  background-color: #003399;
+  border-color: #003399;
+  transform: scale(1.06); /* تكبير الزر بنسبة 10% عند التمرير */
+}

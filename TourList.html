@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Navigation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--  حافظ على رابط Bootstrap CSS هنا -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/TourList.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/logo/Alasa_logo.png"
+              alt="Alasa Logo"
+              height="30"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2" href="index.html"> Home </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mx-2"
+                  href="#"
+                  id="navbarDropdownTours"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tours
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownTours">
+                  <li>
+                    <a class="dropdown-item" href="TourList.html">Tours List</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mx-2"
+                  href="#"
+                  id="navbarDropdownDestination"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Destination
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownDestination"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Destination List</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Single Destination</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Trip Ideas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="Deals.html">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="Careers.html">Careers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mx-2"
+                  href="#"
+                  id="navbarDropdownPages"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownPages">
+                  <li><a class="dropdown-item" href="#">Shop</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Travel Tips</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mx-2"
+                  href="#"
+                  id="navbarDropdownLanguage"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownLanguage"
+                >
+                  <li><a class="dropdown-item" href="#">Spanish</a></li>
+                  <li><a class="dropdown-item" href="#">French</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mx-2"
+                  href="#"
+                  id="navbarDropdownCurrency"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownCurrency"
+                >
+                  <li><a class="dropdown-item" href="#">EUR</a></li>
+                  <li><a class="dropdown-item" href="#">GBP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="btn-cart btn btn-sm rounded-circle mx-2"
+                  type="button"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="signin_btn btn btn-outline-primary mx-2" href="#"
+                  >Sign in</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container mt-4">
+      <h1>Tours</h1>
+      <p>Explore experiences, spots, tours and more</p>
+
+      <div class="row">
+        <!-- Filter Section -->
+        <div class="col-md-3 filter-section">
+          <div class="filter-container">
+          <div class="where-when-section">
+  <h4>Where & When</h4>
+
+  <div class="mb-2 filter-input">
+    <label class="form-label">All Destination</label>
+    <div class="custom-input-group">
+      <i class="fa fa-map-marker-alt"></i>
+      <input
+        type="text"
+        class="custom-input"
+        placeholder="All Destination"
+      />
+      <label class="clear-btn" type="button">
+        <i class="fa fa-times" style="color: black"></i>
+      </label>
+    </div>
+  </div>
+
+  <div class="mb-2 filter-input">
+    <label class="form-label">Select Dates</label>
+    <div class="custom-input-group">
+      <i class="fa fa-calendar-alt"></i>
+      <input type="text" class="custom-input" placeholder="mm/dd/yyyy" />
+      <label class="clear-btn" type="button">
+        <i class="fa fa-times" style="color: black"></i>
+      </label>
+    </div>
+  </div>
+
+  <div class="selected-filters">
+    <button class="clear-filter-button">Clear Filter</button>
+  </div>
+</div>
+            <hr />
+
+            <h4>Duration</h4>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="duration1"
+              />
+              <label class="form-check-label" for="duration1">
+                Less than 1 day
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="duration2"
+              />
+              <label class="form-check-label" for="duration2">
+                1 to 3 days
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="duration3"
+              />
+              <label class="form-check-label" for="duration3"> 3+ days </label>
+            </div>
+
+            <hr />
+
+            <h4>Tour Types</h4>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="type1"
+              />
+              <label class="form-check-label" for="type1">
+                Escorted Tour
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="type2"
+              />
+              <label class="form-check-label" for="type2"> Rail Tour </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="type3"
+              />
+              <label class="form-check-label" for="type3"> River Cruise </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="type4"
+              />
+              <label class="form-check-label" for="type4">
+                Tour & Cruise
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="type5"
+              />
+              <label class="form-check-label" for="type5"> Wildlife </label>
+            </div>
+
+            <hr />
+
+            <h4>Rating</h4>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rating"
+                id="rating1"
+              />
+              <label class="form-check-label" for="rating1"> All Rating </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rating"
+                id="rating2"
+              />
+              <label class="form-check-label" for="rating2">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i> & Up
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rating"
+                id="rating3"
+              />
+              <label class="form-check-label" for="rating3">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i><i class="fa fa-star"></i> & Up
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rating"
+                id="rating4"
+              />
+              <label class="form-check-label" for="rating4">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i>
+                & Up
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rating"
+                id="rating5"
+              />
+              <label class="form-check-label" for="rating5">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i> & Up
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rating"
+                id="rating6"
+              />
+              <label class="form-check-label" for="rating6">
+                <i class="fa fa-star"></i> & Up
+              </label>
+            </div>
+
+            <hr />
+
+            <h4>Price</h4>
+            <div class="d-flex align-items-center">
+              <label for="priceMin" class="me-2">$42</label>
+              <input
+                type="range"
+                class="form-range"
+                min="42"
+                max="424"
+                id="priceRange"
+              />
+              <label for="priceMax" class="ms-2">$424</label>
+            </div>
+            <button class="btn btn-success mt-3 w-100">Find Tours</button>
+          </div>
+        </div>
+
+        <!-- Tour List Section -->
+        <div class="col-md-9">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>Showing 1-12 of 16 results</div>
+            <div>
+              <label for="sortBy" class="me-2">Sort By</label>
+              <select class="form-select" id="sortBy">
+                <option selected>Default sorting</option>
+                <option value="priceLow">Price: Low to High</option>
+                <option value="priceHigh">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Sample Tour Card (Repeat this for each tour) -->
+            <div class="col">
+              <div class="card h-100 position-relative">
+                <img
+                  src="https://picsum.photos/300/200?random=1"
+                  class="card-img-top"
+                  alt="Tour Image"
+                />
+                <span class="on-sale">On Sale</span>
+                <div class="card-body">
+                  <h5 class="card-title">Adventure Shore Excursions</h5>
+                  <p class="card-text">Explore Half-Moon Reef & Coral...</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">From $99.00</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Sample Tour Card -->
+
+            <div class="col">
+              <div class="card h-100 position-relative">
+                <img
+                  src="https://picsum.photos/300/200?random=2"
+                  class="card-img-top"
+                  alt="Tour Image"
+                />
+                <span class="on-sale">On Sale</span>
+                <div class="card-body">
+                  <h5 class="card-title">Alpine Getaway For Mountain</h5>
+                  <p class="card-text">lovers.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">From $60.00</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Sample Tour Card -->
+
+            <div class="col">
+              <div class="card h-100 position-relative">
+                <img
+                  src="https://picsum.photos/300/200?random=3"
+                  class="card-img-top"
+                  alt="Tour Image"
+                />
+                <span class="on-sale">On Sale</span>
+                <div class="card-body">
+                  <h5 class="card-title">Bali Unesco World Heritage Sites</h5>
+                  <p class="card-text">Tour.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">From $92.00</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Sample Tour Card -->
+            <div class="col">
+              <div class="card h-100 position-relative">
+                <img
+                  src="https://picsum.photos/300/200?random=4"
+                  class="card-img-top"
+                  alt="Tour Image"
+                />
+                <span class="on-sale">On Sale</span>
+                <div class="card-body">
+                  <h5 class="card-title">Best Of London Tower Of London</h5>
+                  <p class="card-text">Thames & Changing Of The Guard...</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">From $300.00</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Sample Tour Card -->
+            <div class="col">
+              <div class="card h-100 position-relative">
+                <img
+                  src="https://picsum.photos/300/200?random=5"
+                  class="card-img-top"
+                  alt="Tour Image"
+                />
+                <span class="on-sale">On Sale</span>
+                <div class="card-body">
+                  <h5 class="card-title">Dubrownik Discovery Old Town</h5>
+                  <p class="card-text">Walking Tour.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">From $64.00</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Sample Tour Card -->
+            <div class="col">
+              <div class="card h-100 position-relative">
+                <img
+                  src="https://picsum.photos/300/200?random=6"
+                  class="card-img-top"
+                  alt="Tour Image"
+                />
+                <span class="on-sale">On Sale</span>
+                <div class="card-body">
+                  <h5 class="card-title">Incredible Holiday With Cruise</h5>
+                  <p class="card-text">tour.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">From $93.00</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Sample Tour Card -->
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation example" class="mt-4">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">«</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">»</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
